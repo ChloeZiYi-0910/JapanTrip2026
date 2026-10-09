@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>东京・京都・大阪 11日绘本行程</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFCF6;--ink:#3E3A39;--pink:#F2A497;--yel:#F6D27A;--blue:#A8D3E6;--green:#B9DAA5;--b:3px solid var(--ink);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Huninn","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;background:var(--bg);border-bottom:var(--b);padding:env(safe-area-inset-top,0px) 10px 0}
+nav .in{display:flex;gap:8px;overflow-x:auto;padding:8px 2px;max-width:720px;margin:auto;scrollbar-width:none}
+nav a{flex:none;color:var(--ink);text-decoration:none;border:var(--b);border-radius:999px;padding:2px 14px;font-size:14px;background:var(--bg)}
+nav a:nth-child(1){background:var(--pink)}nav a:nth-child(2){background:var(--blue)}nav a:nth-child(3){background:var(--yel)}nav a:nth-child(4){background:var(--green)}nav a:nth-child(5){background:var(--pink)}
+main{max-width:720px;margin:auto;padding:76px 16px 40px}
+section{margin-top:34px}
+h1{font-size:30px;line-height:1.3;margin:12px 0 4px;font-weight:400}
+h2{font-size:22px;margin:0 0 14px;font-weight:400;display:inline-block;background:var(--yel);border:var(--b);border-radius:18px;padding:0 16px}
+.card{background:var(--bg);border:var(--b);border-radius:26px;padding:16px;margin-bottom:14px}
+.hero{background:var(--blue);border:var(--b);border-radius:32px;overflow:hidden}
+.hero svg{display:block;width:100%;height:auto}
+.hero .txt{background:var(--bg);border-top:var(--b);padding:14px 16px 18px;text-align:center}
+.hero p{margin:0;font-size:14px}
+.cd{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.cd div{background:var(--yel);border:var(--b);border-radius:18px;padding:4px 0;width:68px}
+.cd div:nth-child(2){background:var(--pink)}.cd div:nth-child(3){background:var(--green)}
+.cd b{display:block;font-size:26px;font-weight:400;line-height:1.2}.cd span{font-size:12px}
+.fl{display:flex;align-items:center;gap:10px}
+.fl .p{flex:1}.fl .p b{font-size:22px;font-weight:400;display:block;line-height:1.2}.fl .p small{font-size:13px}
+.fl .p:last-child{text-align:right}
+.mid{flex:none;text-align:center;font-size:12px}
+.mid i{display:block;width:44px;border-top:3px dashed var(--ink);margin:4px auto}
+.pill{display:inline-block;border:var(--b);border-radius:999px;padding:0 12px;font-size:13px;margin-bottom:8px}
+.warn{background:var(--pink);border:var(--b);border-radius:18px;padding:8px 12px;font-size:14px;margin-top:10px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px;scrollbar-width:none}
+.tab{flex:none;font:inherit;color:var(--ink);background:var(--bg);border:var(--b);border-radius:20px;padding:2px 14px;text-align:center;cursor:pointer;line-height:1.3}
+.tab small{display:block;font-size:12px}
+.tab[aria-selected=true]{background:var(--pink);transform:translateY(-2px)}
+.tab:focus-visible,a:focus-visible,input:focus-visible{outline:3px dashed var(--ink);outline-offset:2px}
+.dh{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:12px}
+.dh h3{font-size:19px;margin:0;font-weight:400;flex-basis:100%}
+.stay{background:var(--green);border:var(--b);border-radius:999px;padding:0 12px;font-size:13px}
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;border-left:3px dashed var(--ink)}
+.it{position:relative;margin-bottom:12px;background:var(--bg);border:var(--b);border-radius:22px;padding:8px 12px;font-size:15px}
+.it::before{content:"";position:absolute;left:-26px;top:14px;width:15px;height:15px;border:var(--b);border-radius:50%;background:var(--yel)}
+.it.must{background:#FFF3D1}.it.tip{background:#EEF7E8}.it.w{background:#FDE3DE}
+.it.must::before{background:var(--pink)}
+.tag{display:inline-block;border:var(--b);border-radius:999px;padding:0 10px;font-size:12px;margin-right:6px;line-height:1.6;vertical-align:1px}
+.t-train{background:var(--blue)}.t-bullet{background:var(--pink)}.t-ltd{background:var(--yel)}.t-walk{background:var(--green)}.t-car{background:#F9C9BF}.t-air{background:#CFE6F1}.t-plan{background:var(--bg)}
+.must-b{display:inline-block;background:var(--pink);border:var(--b);border-radius:12px;padding:0 8px;font-size:12px;margin-left:6px;transform:rotate(-4deg)}
+.pop .it{animation:pop .5s cubic-bezier(.3,1.6,.5,1) both}
+@keyframes pop{0%{opacity:0;transform:translateY(18px) scale(.9)}100%{opacity:1;transform:none}}
+.chk{display:flex;gap:12px;align-items:center;padding:8px 0;cursor:pointer;border-bottom:3px dotted var(--ink)}
+.chk:last-child{border:0}
+.chk input{appearance:none;-webkit-appearance:none;flex:none;width:28px;height:28px;border:var(--b);border-radius:10px;background:var(--bg);margin:0;cursor:pointer;position:relative}
+.chk input:checked{background:var(--green)}
+.chk input:checked::after{content:"";position:absolute;left:7px;top:1px;width:8px;height:15px;border:solid var(--ink);border-width:0 3px 3px 0;transform:rotate(45deg);animation:pop .35s cubic-bezier(.3,1.6,.5,1)}
+.chk input:checked+span{text-decoration:line-through;opacity:.55}
+.bar{height:20px;border:var(--b);border-radius:999px;overflow:hidden;margin-bottom:10px;background:var(--bg)}
+.bar i{display:block;height:100%;background:var(--yel);width:0;transition:width .4s}
+.hot{display:flex;gap:12px;align-items:flex-start}
+.hot svg{flex:none;width:54px;height:54px}
+.hot h4{margin:0;font-weight:400;font-size:18px}.hot p{margin:0;font-size:14px}
+footer{text-align:center;font-size:13px;padding:10px 0 30px}
+.cloud{animation:drift 14s ease-in-out infinite alternate}.cloud2{animation:drift 18s ease-in-out infinite alternate-reverse}
+.train{animation:bob 2.6s ease-in-out infinite}.sun{animation:bob 4s ease-in-out infinite;transform-origin:center}
+.pet{animation:fall 7s linear infinite}.pet:nth-of-type(2){animation-delay:-2.4s}.pet:nth-of-type(3){animation-delay:-4.6s}
+@keyframes drift{to{transform:translateX(26px)}}
+@keyframes bob{50%{transform:translateY(-4px)}}
+@keyframes fall{0%{transform:translate(0,-20px) rotate(0)}100%{transform:translate(-30px,230px) rotate(240deg)}}
+
+.dc{display:flex;gap:14px;align-items:center;background:#FBE7B4;border:var(--b);border-radius:28px;padding:12px 14px;margin-bottom:22px}
+.dc svg{flex:none;width:62px;height:62px}.dc small{font-size:13px;display:block;line-height:1.3}.dc h3{margin:0;font-size:20px;line-height:1.35;font-weight:400}.dc span{font-size:13px}
+.tl2{position:relative}.tl2::before{content:"";position:absolute;left:73px;top:10px;bottom:10px;border-left:3px dotted var(--ink)}
+.row{position:relative;padding-left:90px;margin-bottom:14px;min-height:30px}
+.row .tm{position:absolute;left:0;width:56px;text-align:right;top:3px;font-size:14px}
+.row.d::after{content:"";position:absolute;left:66px;top:9px;width:15px;height:15px;border:var(--b);border-radius:50%;background:var(--bg)}
+.row.m.d::after{background:var(--pink)}
+.bx{background:var(--bg);border:var(--b);border-radius:22px;padding:6px 14px;font-size:16px}
+.bx.m{background:#FFF3D1}.bx.s{background:#EEF7E8}.bx.tip{background:#EEF7E8;font-size:14px}.bx.w{background:#FDE3DE;font-size:14px}
+.bx a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--blue);text-decoration-thickness:3px;text-underline-offset:3px}
+.nt{font-size:13px;opacity:.7;margin-top:2px}
+.tg{display:inline-block;border:var(--b);border-radius:999px;padding:0 10px;font-size:14px;margin-right:6px;line-height:1.6}
+.x-出租车{background:var(--yel)}.x-地铁{background:var(--green)}.x-公交{background:var(--blue)}.x-新干线{background:var(--pink)}.x-特急{background:#F9C9BF}.x-电车{background:#CFE6F1}.x-步行{background:#E3F0D8}.x-包车{background:#FBE7B4}.x-飞机{background:#D8E8F2}
+.pop .row{animation:pop .5s cubic-bezier(.3,1.6,.5,1) both}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="in"><a href="#top">首页</a><a href="#flight">航班</a><a href="#days">行程</a><a href="#todo">待办</a><a href="#stay">住宿</a></div></nav>
+<main id="top">
+<div class="hero">
+<svg viewBox="0 0 360 230" role="img" aria-label="富士山、新干线与樱花的插图">
+<rect width="360" height="230" fill="#A8D3E6"/>
+<g class="sun"><circle cx="270" cy="62" r="30" fill="#F2A497" stroke="#3E3A39" stroke-width="3"/></g>
+<g class="cloud"><path d="M30 60h70a14 14 0 0 0-8-24 18 18 0 0 0-34-4 16 16 0 0 0-28 28z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/></g>
+<g class="cloud2"><path d="M200 34h60a11 11 0 0 0-6-19 14 14 0 0 0-27-3 13 13 0 0 0-27 22z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/></g>
+<path d="M60 170 150 52q10-12 20 0l90 118z" fill="#B9A9D8" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+<path d="M132 76 150 52q10-12 20 0l18 24-14 8-10-10-12 10-10-10z" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+<path d="M0 170q90-30 180-6t180-6v72H0z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3"/>
+<g stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><rect x="288" y="118" width="8" height="50" fill="#F2A497"/><rect x="326" y="118" width="8" height="50" fill="#F2A497"/><path d="M280 120q31 6 62 0l4-12q-35 8-70 0z" fill="#F2A497"/><path d="M286 134h50" fill="none"/></g>
+<g class="train" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"><path d="M20 196h200q18 0 26-14-30-16-60-18H40q-20 0-20 14z" fill="#FFFCF6"/><path d="M20 190h226" fill="none"/><path d="M20 196h226" fill="none"/><rect x="48" y="172" width="24" height="12" rx="5" fill="#A8D3E6"/><rect x="84" y="172" width="24" height="12" rx="5" fill="#A8D3E6"/><rect x="120" y="172" width="24" height="12" rx="5" fill="#A8D3E6"/><path d="M190 168q26 2 46 14h-46z" fill="#F6D27A"/><path d="M20 192h226" stroke="#F2A497" stroke-width="5"/></g>
+<g fill="#F2A497" stroke="#3E3A39" stroke-width="2"><ellipse class="pet" cx="300" cy="10" rx="6" ry="4"/><ellipse class="pet" cx="220" cy="0" rx="6" ry="4"/><ellipse class="pet" cx="340" cy="-20" rx="6" ry="4"/></g>
+<path d="M0 214h360v16H0z" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/>
+</svg>
+<div class="txt">
+<p>吉隆坡 → 东京 → 京都 → 大阪</p>
+<h1>日本十一日绘本之旅</h1>
+<p>10/13 出发 ‧ 10/23 返程</p>
+<div class="cd" aria-live="polite"><div><b id="cd-d">-</b><span>天</span></div><div><b id="cd-h">-</b><span>时</span></div><div><b id="cd-m">-</b><span>分</span></div></div>
+<p id="cd-note" style="margin-top:8px;font-size:13px"></p><p id="sync" style="margin-top:4px;font-size:12px">📒 内容暂用内置版本，正在连接 Notion…</p>
+</div></div>
+
+<section id="flight"><h2>航班</h2>
+<div class="card"><span class="pill" style="background:var(--blue)">去程 ‧ 10/13</span>
+<div class="fl"><div class="p"><b>02:15</b><small>吉隆坡 KLIA T1</small></div><div class="mid">✈<i></i>约4h</div><div class="p"><b>06:15</b><small>马尼拉 T1</small></div></div>
+<div style="border-top:3px dotted var(--ink);margin:12px 0"></div>
+<div class="fl"><div class="p"><b>07:35</b><small>马尼拉 T1</small></div><div class="mid">✈<i></i>转机</div><div class="p"><b>13:00</b><small>成田机场 T2</small></div></div>
+<div class="warn">⚠️ 马尼拉中转仅 1h20min，风险高！前一班晚点容易赶不上下一程，请提前线上值机，随身行李精简。</div></div>
+<div class="card"><span class="pill" style="background:var(--yel)">返程 ‧ 10/23</span>
+<div class="fl"><div class="p"><b>15:00</b><small>关西机场起飞</small></div><div class="mid">✈<i></i></div><div class="p"><b>12:00</b><small>最晚从市区出发</small></div></div>
+<div class="warn">⚠️ 国际航班至少提前 3 小时到机场，12:00 前就要出发前往关西机场，不要拖！</div></div>
+</section>
+
+<section id="days"><h2>每日行程</h2>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div id="panel" role="tabpanel"></div>
+</section>
+
+<section id="todo"><h2>出发前待办</h2>
+<div class="card"><div class="bar" aria-hidden="true"><i id="prog"></i></div><div id="list"></div></div>
+</section>
+
+<section id="stay"><h2>住宿</h2>
+<div class="card hot"><svg viewBox="0 0 54 54"><rect x="6" y="18" width="42" height="30" rx="8" fill="#A8D3E6" stroke="#3E3A39" stroke-width="3"/><path d="M4 22 27 6l23 16z" fill="#F2A497" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><rect x="22" y="30" width="10" height="18" rx="3" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"/></svg><div><h4>东京中野</h4><p>加藤マンション 301<br>10/13–10/17（4晚），新中野站步行 5–8 分钟</p></div></div>
+<div class="card hot"><svg viewBox="0 0 54 54"><path d="M8 48V26h38v22z" fill="#F6D27A" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><path d="M3 28 27 8l24 20z" fill="#F2A497" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><rect x="21" y="34" width="12" height="14" rx="3" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"/></svg><div><h4>京都</h4><p>10/17–10/19（2晚）<br>大件行李先到住宿寄放，再去清水寺</p></div></div>
+<div class="card hot"><svg viewBox="0 0 54 54"><rect x="12" y="20" width="30" height="28" rx="6" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3"/><path d="M8 22 27 6l19 16z" fill="#A8D3E6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><rect x="23" y="32" width="8" height="16" rx="3" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"/></svg><div><h4>大阪</h4><p>10/19–10/23（4晚）<br>10/19 傍晚从奈良过来办理入住</p></div></div>
+</section>
+<footer>🌸 一路平安，玩得开心 🌸</footer>
+</main>
+
+<script>
+var T={train:["电车","t-train"],bullet:["新干线","t-bullet"],ltd:["特急","t-ltd"],walk:["步行","t-walk"],car:["包车","t-car"],air:["飞机","t-air"],plan:["行程","t-plan"]};
+// [类型, 文字, 标记 m=必去 t=小贴士 w=提醒]
+var D=[
+{d:"10/13",n:"抵达东京",s:"东京中野",i:[["air","落地成田机场 T2（13:00），入境审查＋取行李预留 60–90 分钟"],["ltd","搭乘 N'EX 成田特快前往新宿站，约 80 分钟，可提前网上预约座位"],["train","新宿站换乘丸之内线（荻洼方向）→ 新中野站"],["walk","出站步行 5–8 分钟到公寓"],["plan","办理入住，附近 7-11／超市采购，休息调整，不安排景点"]]},
+{d:"10/14",n:"富士山・河口湖",s:"东京中野",i:[["ltd","07:30 新宿站搭乘 Azusa 梓特急 → 大月站（可携带行李）"],["train","大月站换乘富士急电车 → 河口湖站（电车也可放行李）"],["car","河口湖站下车，与司机约定预估到站浮动时间，包车环湖游玩","m"],["ltd","傍晚搭乘电车＋特急返回新宿，回中野公寓"],["plan","Azusa 大件行李放车厢后方行李架；河口湖包车提前确认等候地点","t"]]},
+{d:"10/15",n:"东京市区",s:"东京中野",i:[["walk","明治神宫（早上人少）","m"],["walk","原宿竹下通"],["walk","涩谷十字路口","m"],["train","新宿"],["plan","傍晚涩谷夜景好看；Suica 卡直接刷卡搭乘地铁","t"]]},
+{d:"10/16",n:"东京市区",s:"东京中野",i:[["walk","浅草寺＋仲见世通","m"],["walk","上野公园／上野动物园"],["walk","晴空塔","m"],["plan","晚上整理行李，准备明天新干线前往京都；大件行李记得预留空间","t"]]},
+{d:"10/17",n:"东京 → 京都",s:"京都",i:[["bullet","早上东京站搭乘新干线前往京都站"],["plan","大件行李一定要提前预约新干线「大件行李指定席」","w"],["plan","下午入住京都住宿"],["walk","清水寺、二年坂三年坂，逛日式小店","m"],["walk","傍晚：祇园散步、鸭川河边看日落"]]},
+{d:"10/18",n:"京都",s:"京都",i:[["walk","上午：伏见稻荷大社（千本鸟居，建议 8 点前到，避开旅行团）","m"],["walk","下午：岚山竹林小径、渡月桥","m"],["train","岚山小火车可作备选"],["plan","伏见稻荷爬山耗体力，穿舒服的鞋；岚山周末游客很多","t"]]},
+{d:"10/19",n:"宇治 + 奈良",s:"大阪",i:[["plan","这天比较赶，需要早起！","w"],["train","京都出发 → 宇治"],["walk","平等院、宇治抹茶甜品（中村藤吉）","m"],["train","宇治坐电车前往奈良，换乘需预留等车时间"],["walk","奈良公园喂小鹿、东大寺、春日大社、若草山","m"],["train","傍晚搭乘电车前往大阪，办理入住"],["plan","小鹿会追人，不要直接徒手拿仙贝","t"]]},
+{d:"10/20",n:"大阪市内",s:"大阪",i:[["walk","大阪城公园（天守阁）","m"],["walk","心斋桥逛街，药妆店很多，可集中采购"],["walk","道顿堀美食打卡，晚上最热闹","m"]]},
+{d:"10/21",n:"USJ 日本环球影城",s:"大阪",i:[["plan","重点：马里奥园区、好莱坞区域","m"],["plan","快速票买到后，进入订单页面才可挑选马里奥／好莱坞入场时间，商品页面不会显示","t"],["plan","尽量早入园，马里奥世界排队很长","t"],["plan","带空水瓶，园区有直饮水；轻便包包，少带重物","t"]]},
+{d:"10/22",n:"大阪（两套方案）",s:"大阪",i:[["plan","方案 B【推荐轻松版】：通天阁＋梅田蓝天大厦、梅田商圈","m"],["plan","梅田适合傍晚看夜景、逛街吃美食，不用长途奔波","t"],["plan","方案 A（原版，路程远）：胜尾寺 → 通天阁 → 梅田商圈"],["plan","胜尾寺来回接近 2 小时，山路，需预留一整天","t"]]},
+{d:"10/23",n:"大阪返程 ✈ 15:00",s:"大阪",i:[["walk","上午：黑门市场吃海鲜（尽量早点逛）","m"],["walk","难波八坂神社"],["plan","行李提前打包好，预留充足移动时间","t"],["plan","12:00 前出发前往关西机场，飞机 15:00 起飞，至少提前 3 小时到！","w"],["air","关西机场搭乘返程航班"]]}
+];
+var tabs=document.getElementById("tabs"),panel=document.getElementById("panel"),cur=0;
+var TRANS={"出租车":1,"地铁":1,"公交":1,"新干线":1,"特急":1,"电车":1,"步行":1,"包车":1,"飞机":1};
+var OLDK={train:"电车",bullet:"新干线",ltd:"特急",walk:"步行",car:"包车",air:"飞机",plan:""};
+function rich(t){return esc(t).replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>')}
+function norm(e){if(!Array.isArray(e))return e;var ty=OLDK[e[0]]||"",f=e[2]||"";if(f==="m"&&!ty)ty="必去";return{tm:"",ty:ty,tx:e[1],nt:"",f:f}}
+function rowHtml(e){
+  e=norm(e);var ty=e.ty,f=e.f,tm=e.tm?'<span class="tm">'+esc(e.tm)+'</span>':"",nt=e.nt?'<div class="nt">'+rich(e.nt)+'</div>':"";
+  if(f==="t"||f==="w")return '<div class="row"><div class="bx '+f+'">'+(f==="t"?"💡 ":"⚠️ ")+rich(e.tx)+'</div></div>';
+  if(TRANS[ty])return '<div class="row d">'+tm+'<span class="tg x-'+ty+'">'+ty+'</span>'+rich(e.tx)+nt+'</div>';
+  var c="bx",pre="",post="";
+  if(ty==="必去"||f==="m"){c+=" m";post='<span class="must-b">必去</span>'}
+  else if(ty==="住宿"){c+=" s";pre="🏠 "}
+  else if(ty==="餐饮")pre="🍴 ";
+  return '<div class="row d'+(c.indexOf(" m")>0?" m":"")+'">'+tm+'<div class="'+c+'">'+pre+rich(e.tx)+post+nt+'</div></div>'}
+function show(k,scroll){
+  cur=k;var x=D[k];
+  [].forEach.call(tabs.children,function(b,j){b.setAttribute("aria-selected",j==k)});
+  var h='<div class="dc"><svg viewBox="0 0 62 62"><rect x="3" y="3" width="56" height="56" rx="16" fill="#FFFCF6" stroke="#3E3A39" stroke-width="3"/><path d="M6 40q8-6 16 0t16 0 16 0v12a6 6 0 0 1-6 6H12a6 6 0 0 1-6-6z" fill="#A8D3E6" stroke="#3E3A39" stroke-width="3"/><circle cx="31" cy="24" r="9" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/><circle cx="31" cy="24" r="3" fill="#F2A497" stroke="#3E3A39" stroke-width="2"/></svg><div><small>Day '+(k+1)+' ‧ '+esc(x.d)+'</small><h3>'+esc(x.n)+'</h3>'+(x.s?'<span>住 '+esc(x.s)+'</span>':"")+'</div></div><div class="tl2">';
+  x.i.forEach(function(e){h+=rowHtml(e)});
+  panel.className="";void panel.offsetWidth;panel.innerHTML=h+'</div>';panel.className="pop";
+  if(scroll){var bt=tabs.children[k];tabs.scrollTo({left:bt.offsetLeft-20,behavior:"smooth"})}
+}
+function buildTabs(){tabs.innerHTML="";D.forEach(function(x,k){var b=document.createElement("button");b.className="tab";b.setAttribute("role","tab");b.innerHTML="D"+(k+1)+"<small>"+x.d+"</small>";b.onclick=function(){show(k,true)};tabs.appendChild(b)})}
+buildTabs();show(0);
+// 倒数
+var tgt=new Date("2026-10-13T02:15:00+08:00");
+function tick(){var s=Math.floor((tgt-new Date())/1000),n=document.getElementById("cd-note");
+  if(s<=0){["d","h","m"].forEach(function(i){document.getElementById("cd-"+i).textContent="0"});n.textContent="旅程已经开始啦！";return}
+  document.getElementById("cd-d").textContent=Math.floor(s/86400);
+  document.getElementById("cd-h").textContent=Math.floor(s%86400/3600);
+  document.getElementById("cd-m").textContent=Math.floor(s%3600/60);
+  n.textContent="距离 10/13 02:15 吉隆坡起飞"}
+tick();setInterval(tick,30000);
+// 待办
+var L=["护照有效期／电子签证确认","线上值机（马尼拉中转务必）","预约 N'EX 成田特快座位","预约新干线大件行李指定席","预订河口湖包车，确认等候地点","购买 USJ 快速票并挑选入场时间","准备 Suica 卡／手机交通卡","兑换日元现金，准备网络或 eSIM","带空水瓶、轻便背包","行李精简，随身包只留必需品"];
+var st={};try{st=JSON.parse(localStorage.getItem("jp-todo")||"{}")}catch(e){}
+var list=document.getElementById("list");
+function prog(){var n=0;L.forEach(function(t){if(st[t])n++});document.getElementById("prog").style.width=(L.length?n/L.length*100:0)+"%"}
+function buildList(){list.innerHTML="";L.forEach(function(t){var l=document.createElement("label");l.className="chk";var inp=document.createElement("input");inp.type="checkbox";inp.checked=!!st[t];var sp=document.createElement("span");sp.textContent=t;l.appendChild(inp);l.appendChild(sp);
+  inp.onchange=function(){st[t]=inp.checked;try{localStorage.setItem("jp-todo2",JSON.stringify(st))}catch(x){}prog()};list.appendChild(l)});prog()}
+try{st=JSON.parse(localStorage.getItem("jp-todo2")||"{}")}catch(e){st={}}
+buildList();
+/* ===== Notion 同步 ===== */
+var PAGE="3f423223b80381b8a7d3dc4789409500";
+function esc(x){return String(x).replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+function pad(n){return ("0"+n).slice(-2)}
+function guess(t){if(/新干线/.test(t))return"bullet";if(/特急|N'EX|成田特快/.test(t))return"ltd";if(/包车/.test(t))return"car";if(/电车|地铁|线|换乘/.test(t))return"train";if(/落地|机场|航班|起飞/.test(t))return"air";if(/步行|散步|逛|公园|神社|寺|城|桥|市场|通/.test(t))return"walk";return"plan"}
+function parseNotion(t){
+  var c=(t.split("<content>")[1]||t).split("</content>")[0],o={};
+  var m=c.match(/(\d+)\/(\d+)\s+(\d\d:\d\d)/);if(m)o.go=new Date("2026-"+pad(m[1])+"-"+pad(m[2])+"T"+m[3]+":00+08:00");
+  var tb=[];c.replace(/<table[\s\S]*?<\/table>/g,function(x){var rows=[];x.replace(/<tr[^>]*>([\s\S]*?)<\/tr>/g,function(_,r){var cs=[];r.replace(/<td[^>]*>([\s\S]*?)<\/td>/g,function(_,v){cs.push(v.trim())});rows.push(cs)});tb.push(rows.slice(1))});
+  o.fl=tb[0]||[];o.stay=tb[1]||[];
+  o.warn=[];c.replace(/<callout icon="⚠️"[^>]*>([\s\S]*?)<\/callout>/g,function(_,x){x.split("\n").forEach(function(l){l=l.trim();if(l)o.warn.push(l)})});
+  var days=[];c.replace(/<details>\s*<summary>([\s\S]*?)<\/summary>([\s\S]*?)<\/details>/g,function(_,sm,body){
+    var h=sm.trim().match(/^D(\d+)\s*[｜|]\s*(\d+\/\d+)\s*(.*?)\s*(?:[（(]住[：:]\s*(.*?)[）)])?$/);if(!h)return;
+    var it=[];body.split("\n").forEach(function(l){var q=l.match(/^\s*-\s+(.*)$/);if(!q)return;var x=q[1].trim(),f="";
+      if(/^💡/.test(x)){it.push({tm:"",ty:"",tx:x.replace(/^💡\s*/,""),nt:"",f:"t"});return}
+      if(/^⚠️/.test(x)){it.push({tm:"",ty:"",tx:x.replace(/^⚠️\s*/,""),nt:"",f:"w"});return}
+      var p=x.split("｜");
+      if(p.length>=3){var ty=p[1].trim();it.push({tm:p[0].trim(),ty:ty,tx:p[2].trim(),nt:(p[3]||"").trim(),f:ty==="必去"?"m":""});return}
+      if(/⭐|必去/.test(x)){f="m";x=x.replace(/⭐|【?必去】?/g,"").trim()}
+      it.push({tm:"",ty:OLDK[guess(x)]||"",tx:x,nt:"",f:f})});
+    days.push({d:h[2],n:h[3]||"",s:h[4]||"",i:it})});
+  o.days=days;
+  o.todo=[];c.replace(/^- \[[ xX]\] (.*)$/gm,function(_,x){o.todo.push(x.trim())});
+  return o}
+function apply(o){
+  if(o.days.length){D=o.days;if(cur>=D.length)cur=0;buildTabs();show(cur)}
+  if(o.todo.length){L=o.todo;buildList()}
+  if(o.go){tgt=o.go;tick()}
+  var f=document.querySelector("#flight");
+  if(o.fl.length){var h='<h2>航班</h2><div class="card">';o.fl.forEach(function(r,k){h+='<div style="padding:6px 0;'+(k?'border-top:3px dotted var(--ink)':'')+'"><span class="pill" style="background:var(--blue);margin:0 6px 0 0">'+esc(r[0]||"")+'</span><b style="font-weight:400">'+esc(r[1]||"")+'</b><br>'+esc(r[2]||"")+(r[3]?' ｜ '+esc(r[3]):"")+'</div>'});
+    h+='</div>';o.warn.forEach(function(w){h+='<div class="warn">⚠️ '+esc(w)+'</div>'});f.innerHTML=h}
+  var sy=document.querySelector("#stay");
+  if(o.stay.length){var g='<h2>住宿</h2>';o.stay.forEach(function(r){g+='<div class="card hot"><div style="font-size:34px">🏠</div><div><h4>'+esc(r[0]||"")+'</h4><p>'+esc(r[1]||"")+'<br>'+esc(r[2]||"")+(r[3]?' ‧ '+esc(r[3]):"")+(r[4]?'<br>🚉 '+esc(r[4]).replace(/&lt;br&gt;/g,' / '):"")+(r[5]?'<br>'+esc(r[5]).replace(/&lt;br&gt;/g,' ｜ '):"")+'</p></div></div>'});sy.innerHTML=g}}
+function say(t){document.getElementById("sync").textContent=t}
+(async function(){
+  var mcp=null;try{mcp=await claude.use("mcp")}catch(e){}
+  if(!mcp){say("📒 目前显示内置内容（此环境无法连接 Notion）");return}
+  var tool="notion-fetch";
+  try{var lt=await mcp.listTools();var all=[];(Array.isArray(lt)?lt:(lt.tools||[])).forEach(function(x){if(x.server==="Notion"||x.serverName==="Notion")all.push(x.name||x.tool)});
+    for(var k=0;k<all.length;k++){if(/fetch$/.test(all[k])){tool=all[k];break}}}catch(e){}
+  mcp.watchTool("Notion",tool,{id:PAGE},function(ev){
+    if(ev.type==="data"){
+      var r=ev.result,p=r.payload,t="";
+      if(typeof p==="string")t=p;else if(p&&typeof p.text==="string")t=p.text;else if(r.content&&r.content[0])t=r.content[0].text||"";
+      if(t.indexOf("{")===0&&t.indexOf("<content>")<0){try{t=JSON.parse(t).text||t}catch(e){}}
+      try{var o=parseNotion(t);if(!o.days.length&&!o.todo.length)throw 0;apply(o);
+        var at=r.cache&&r.cache.storedAt?new Date(r.cache.storedAt):new Date();say("📒 已与 Notion 同步 "+pad(at.getHours())+":"+pad(at.getMinutes()))}
+      catch(e){say("📒 读到 Notion 页面，但格式无法解析，暂用上一版内容")}
+    }else{
+      var c=ev.error&&ev.error.code;
+      if(c==="server_not_connected"||c==="needs_reauth")say("📒 请先在 claude.ai「设置 → 连接器」连接 Notion，目前显示内置内容");
+      else if(c==="not_in_manifest")say("📒 未授权读取 Notion，目前显示内置内容");
+      else say("📒 暂时连不上 Notion，保留上次内容")}
+  },{refetchInterval:60000})
+})();
+</script>
+</body>
+</html>
